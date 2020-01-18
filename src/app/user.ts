@@ -1,5 +1,7 @@
 export class User {
-    constructor(){
-        
+    constructor(public avatar: any, public username: string,  public bio: any, public repositories: any, public followers: any, public following: any, public link: any){
+
     }
+
+
 }

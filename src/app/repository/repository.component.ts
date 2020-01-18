@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import { Repository } from '../repository';
+
 
 @Component({
   selector: 'app-repository',
@@ -7,7 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositoryComponent implements OnInit {
 
-  constructor() { }
+    repo:Repository;
+    userName:string;
+  repoName: string;
+
+  constructor() { 
+    this.repo = ("","","","","")new Repository
+  }
 
   ngOnInit() {
   }
