@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { User } from './user';
 
@@ -10,6 +10,7 @@ import { User } from './user';
 export class UserHttpService {
   user:User;
   userName:string;
+  getUsers: any;
 
   constructor(private http:HttpClient) { 
     this.user = new User("","","","","","","");
