@@ -27,5 +27,6 @@ export class UserHttpService {
       avatar_url:any;
       html_url:any;
     }
+    this.http
   }
 }

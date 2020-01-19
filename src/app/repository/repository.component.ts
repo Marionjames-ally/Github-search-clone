@@ -16,7 +16,6 @@ export class RepositoryComponent implements OnInit {
   repoName: string;
 
   constructor() { 
-    // this.repo = ("","","","","")new Repository
   }
 
   ngOnInit() {
