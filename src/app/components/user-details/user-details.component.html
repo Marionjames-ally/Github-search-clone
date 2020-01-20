@@ -9,6 +9,7 @@
             </h2>
 
         </div>
+
     </div>
 <div class="container">
     <!-- <div class="all"> -->
@@ -51,7 +52,7 @@
                         <br>
                         <p class="btn btn-outline-primary">Repositories<br><span>{{user.public_repos}}</span></p>
                         <br><br>
-                        <p id='repos' class="btn btn-outline-success" (click)="searchUsers = false">click to search the
+                        <p id='repos' class="btn btn-outline-success" (click)="searchUsers = false">click to view the
                             user's Repositories</p>
 
                     </div>
@@ -60,6 +61,7 @@
 
                 <div *ngIf="!searchUsers">
                     <div class="container repo-row">
+                            <h3 class="btn btn-outline-danger">Clear the input box to view the user's repositories</h3>
                         <div *ngFor="let rep of repo" class="card-body text-center" style="width: 500px">
                             <a class="card-title text-center" href="{{rep.html_url}}" target="_blank">
                                 <hr>

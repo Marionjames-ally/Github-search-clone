@@ -6,13 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
-import { ToggleComponent } from './components/toggle/toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserDetailsComponent,
-    ToggleComponent
   ],
   imports: [
     BrowserModule,
