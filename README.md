@@ -2,26 +2,49 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
-## Development server
+## Instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- fork the reposiory
 
-## Code scaffolding
+- git clone to your local desktop
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- run npm install to obtain all the dependencies
 
-## Build
+- ng serve from the terminal to edit of add more features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Developer
 
-## Running unit tests
+* Marion James
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Email
 
-## Running end-to-end tests
+- marionjames2018@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## BDD
+-The user should be able to view quotes posted
 
-## Further help
+- The user should be able to add quotes of her choice
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- The user should be able to upvote or downvote a quote
+
+- The user should be able to delete a quote
+
+## Technologies Used
+
+- Typescript
+
+- HTML
+
+- Boootstrap
+
+- CSS
+
+- Angular Framework
+
+- Javascript
+
+
+
+## license
+
+MIT ©MARION 2019
