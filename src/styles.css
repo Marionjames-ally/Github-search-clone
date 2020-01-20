@@ -5,3 +5,10 @@
 .all{
     background-image: linear-gradient(to top right, rgb(255, 255, 255), rgb(241, 239, 240), rgb(227, 223, 225), rgb(212, 207, 210), rgb(198, 191, 195), rgb(184, 175, 180), rgb(156, 148, 152), rgb(128, 121, 125), rgb(100, 95, 97), rgb(71, 68, 69), rgb(43, 41, 42), rgb(15, 14, 14));
 }
+footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 999;
+}

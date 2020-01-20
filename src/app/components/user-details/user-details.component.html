@@ -1,25 +1,16 @@
 <div class="all">
-    <div class="navbar" style="background-color: black">
-        <img src="https://pbs.twimg.com/profile_images/879760355559325696/Tn2cD3Wq_400x400.jpg" width="40">
-    </div>
-    <a href="https://twitter.com/github?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
-            class="fab fa-twitter" style="color:white; "></i></a>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
-
-                <div class="card">
-                    <div class="card-body">
-                        <p id='users' class="btn btn-outline-primary" (click)="searchUsers = true">Users</p>
-                        <p id='repos' class="btn btn-outline-warning" (click)="searchUsers = false">Repos</p>
-                    </div>
+                <div class="search-class">
+                    <p id='users' class="btn btn-warning" (click)="searchUsers = true">Users</p>
+                    <p id='repos' class="btn btn-info" (click)="searchUsers = false">Repos</p>
                 </div>
-
                 <p class="moringa"></p>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" [(ngModel)]="username" name="username"
-                            placeholder="Enter Username or Repository Name ..." (keyup)="getProfile()">
+                            placeholder="Enter Username" (keyup)="getProfile()">
                     </div>
                 </form>
 
@@ -39,10 +30,19 @@
 
                 </div>
 
+                <div *ngIf="!searchUsers">
+                    <div class="container repo-row">
+                        <div *ngFor="let rep of repo" class="card">
+                            <a href="{{rep.html_url}}" target="_blank" class="card-body">
+                                <h3 class="card-text">{{rep.name}}</h3>
+                                <p class="card-link">{{rep.description}}</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
-        COPYRIGHT COPY@ MARION JAMES 2020
-     </footer>
 </div>
