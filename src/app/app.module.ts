@@ -5,16 +5,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DisplayComponent } from './display/display.component';
-import { RepositoryComponent } from './repository/repository.component';
-import { UserComponent } from './user/user.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DisplayComponent,
-    RepositoryComponent,
-    UserComponent
+    UserDetailsComponent,
+    ToggleComponent
   ],
   imports: [
     BrowserModule,
