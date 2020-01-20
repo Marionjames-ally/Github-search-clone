@@ -2,6 +2,7 @@
     <div class="navbar" style="background-color: black">
         <img src="https://pbs.twimg.com/profile_images/879760355559325696/Tn2cD3Wq_400x400.jpg" width="40">
     </div>
+    <a href="https://twitter.com/github?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter" style="color:white; "></i></a>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -9,7 +10,7 @@
                 <div class="card">
                     <div class="card-body">
                         <p id='users' class="btn btn-outline-primary" (click)="searchUsers = true">Users</p>
-                        <!-- <p id='repos' class="btn btn-outline-warning" (click)="searchUsers = false">Repos</p> -->
+                        <p id='repos' class="btn btn-outline-warning" (click)="searchUsers = false">Repos</p>
                     </div>
                 </div>
 
@@ -17,7 +18,7 @@
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" [(ngModel)]="username" name="username"
-                            placeholder="Enter Username" (keyup)="getProfile()">
+                            placeholder="Enter Username or Repository Name ..." (keyup)="getProfile()">
                     </div>
                 </form>
 
