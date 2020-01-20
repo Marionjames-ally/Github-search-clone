@@ -65,6 +65,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Javascript
 
+## CODEBEAT BADGE
+
+
+[![codebeat badge](https://codebeat.co/badges/b8e93cab-03f8-4dd0-8942-342b7510d6c2)](https://codebeat.co/projects/github-com-marionjames-ally-github-search-clone-master)
 
 
 ## license
