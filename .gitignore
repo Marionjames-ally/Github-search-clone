@@ -46,3 +46,4 @@ testem.log
 Thumbs.db
 
 # tsconfig.json
+ /node_modules
