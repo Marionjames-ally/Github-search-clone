@@ -1,17 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amarante&display=swap');
 
 .all{
-    background-image: linear-gradient(to top, rgb(233, 245, 233), rgb(224, 237, 228), rgb(215, 230, 222), rgb(207, 222, 217), rgb(198, 214, 211), rgb(189, 207, 206), rgb(180, 199, 200), rgb(171, 192, 195), rgb(162, 184, 189), rgb(154, 176, 184), rgb(145, 169, 178), rgb(136, 161, 173));    background-position: inherit;
+    background-image: linear-gradient(to top, rgb(233, 245, 233), rgb(224, 237, 228), rgb(215, 230, 222), rgb(207, 222, 217), rgb(198, 214, 211), rgb(189, 207, 206), rgb(180, 199, 200), rgb(171, 192, 195), rgb(162, 184, 189), rgb(154, 176, 184), rgb(145, 169, 178), rgb(136, 161, 173));
+    background-position: inherit;
+    background-size: cover;
+    height: 667px;
 }
 p{
     color: blue;
+    font-family: 'Lato', sans-serif;
+
 }
 h1{
     font-weight: bolder;
     font-size: 1000;
-
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Amarante', cursive;
 }
 a{
     color:black;
