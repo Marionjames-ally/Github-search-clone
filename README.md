@@ -2,6 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
+## SCREENSHOTS SHOWING HOW TO USE THE APPLICATION
+
+### LANDING PAGE
+
+<img src="https://github.com/Marionjames-ally/Github-search-clone/blob/master/src/assets/Screenshot%20from%202020-01-20%2013-06-00.png?raw=true">
+
+### DISPLAY USER
+
+<img src="https://github.com/Marionjames-ally/Github-search-clone/blob/master/src/assets/Screenshot%20from%202020-01-20%2013-06-25.png?raw=true">
+
+### DISPLAY REPOSITORIES
+
+<img src="https://github.com/Marionjames-ally/Github-search-clone/blob/master/src/assets/Screenshot%20from%202020-01-20%2013-06-50.png?raw=true">
+
+### SWITCH TO SEARCH FOR A USER
+
+<img src="https://github.com/Marionjames-ally/Github-search-clone/blob/master/src/assets/Screenshot%20from%202020-01-20%2013-06-57.png?raw=true">
+
+### RELOAD THE PAGE TO SHOW THE INITIAL PROFILE AS MY PROFILE
+
+<img src="https://github.com/Marionjames-ally/Github-search-clone/blob/master/src/assets/Screenshot%20from%202020-01-20%2013-07-32.png?raw=true">
+
 ## Instructions
 
 - fork the reposiory
