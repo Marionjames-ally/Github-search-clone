@@ -1,53 +1,64 @@
 <div class="all">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="search-class">
-                    <p id='users' class="btn btn-warning" (click)="searchUsers = true">Users</p>
-                    <p id='repos' class="btn btn-info" (click)="searchUsers = false">Repos</p>
-                </div>
-                <p class="moringa"></p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" [(ngModel)]="username" name="username"
-                            placeholder="Enter Username" (keyup)="getProfile()">
-                    </div>
-                </form>
-
-
-                <div *ngIf="searchUsers" class="d-flex justify-content-sm-between clearfix main-card">
-                    <div class="avi-panel to-left">
-                        <img src="{{user.avatar_url}}" alt="avatar">
-                        <a href="{{user.html_url}}" target="_blank"><button class=" prof-btn">Go to Profile
-                            </button></a>
-                    </div>
-                    <div class="details to-right">
-                        <h3>{{user.name}}</h3>
-                        <p class="btn btn-danger">Followers<br><span>{{user.followers}}</span></p>
-                        <p class="btn btn-warning">Following<br><span>{{user.following}}</span></p>
-                        <p class="btn btn-info">Repositories<br><span>{{user.public_repos}}</span></p>
-                    </div>
-
-                </div>
-
-                <div *ngIf="!searchUsers">
-                    <div class="container repo-row">
-                        <div *ngFor="let rep of repo" class="card">
-                            <a href="{{rep.html_url}}" target="_blank" class="card-body">
-                                <h3 class="card-text">{{rep.name}}</h3>
-                                <p class="card-link">{{rep.description}}</p>
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <footer class="text-center" style="color: black;">
-                COPYRIGHT COPY@ MARION JAMES 2020
-            </footer>
-        </div>
-
+    <div class="navbar">
+        <img src="http://iconsetc.com/icons-watermarks/flat-circle-white-on-black/foundation/foundation_social-github/foundation_social-github_flat-circle-white-on-black_512x512.png" width="40" style="background-color: black;">
     </div>
+    <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+          <div class="search-class">
+            <h1 id='users' class="btn" (click)="searchUsers = true">SEARCH USER</h1>
+          </div>
+          <p class="moringa"></p>
+          <form>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Enter Username" (keyup)="getProfile()">
+              </div>
+          </form>
+          
+          
+          <div *ngIf="searchUsers" class="d-flex justify-content-sm-between clearfix main-card">
+            <div class="row avi-panel to-left">
+                <figure>
+              <img src="{{user.avatar_url}}" alt="avatar" width="300rem">
+              <br>
+              <br>
+              <figcaption class="text-center">
+                  <a href="{{user.html_url}}" >{{ user.login }}</a>
+                  <hr>
+                    <a href="{{user.html_url}}" target="_blank"><button class="btn btn-outline-primary" width="5rem">Go to Profile </button></a>
 
-</div>
+              </figcaption>
+            </figure>
+            </div>
+            <div class="details to-right">
+                <!-- <h3>{{ user.name }}</h3> -->
+                <p class="btn btn-outline-primary">Followers<br><span>{{user.followers}}</span></p>
+                <br>
+                <br>
+                <p class="btn btn-outline-primary">Following<br><span>{{user.following}}</span></p>
+                <br>
+                <br>
+                <p class="btn btn-outline-primary">Repositories<br><span>{{user.public_repos}}</span></p><br><br>
+                <p id='repos' class="btn btn-outline-success" (click)="searchUsers = false">click to search the user's Repositories</p>
+
+            </div>
+            
+          </div>
+          
+          <div *ngIf="!searchUsers">
+            <div class="container repo-row">
+              <div *ngFor="let rep of repo" class="card-body text-center" style="width: 500px">
+                <a class="card-title text-center" href="{{rep.html_url}}" target="_blank"><hr>
+                    <h3 class="card-text">{{rep.name}}</h3>
+                    <p class="card-text">{{rep.description}}</p>
+                </a>
+                
+              </div>
+              
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          
+          

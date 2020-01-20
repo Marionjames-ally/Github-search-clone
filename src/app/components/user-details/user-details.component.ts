@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/classes/user';
 import { Repo } from 'src/app/classes/repo';
 import { ServiceRequestService } from 'src/app/service-http/service-http.service';
-// import Typed from 'typed.js'
 
 
 
@@ -41,7 +40,6 @@ export class UserDetailsComponent implements OnInit {
 
     this.service.getRepos(this.username);
     this.repo = this.service.repo;
-    //typed js added to the page
     const options = {
       strings: ['Enter your username please.'],
       
